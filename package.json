@@ -1,0 +1,8 @@
+{
+    "private": true,
+    "workspaces": [
+        "edit3",
+        "eng3",
+        "playground"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@game3/playground",
+  "version": "0.1.0",
+  "description": "A space to test out game3 features.",
+  "main": "dist_prod/index.html",
+  "repository": "https://github.com/elyctech/game3",
+  "author": "Cyle Ven Dawson <dawsonc623@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:prod": "parcel build src/ui/index.html -d dist_prod",
+    "dev": "parcel -p 8085 src/ui/index.html"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel-bundler": "1.12.3",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
