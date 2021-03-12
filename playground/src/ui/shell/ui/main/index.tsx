@@ -6,6 +6,12 @@ import React, {
   useState
 } from "react";
 
+import {
+  viewportManager
+} from "@game3/eng3";
+
+import "./index.scss";
+
 function createShader(
   gl2     : WebGL2RenderingContext,
   type    : GLenum,
@@ -117,15 +123,30 @@ export default function ShellMain() : ReactElement {
     () => {
       const newContext  = canvasRef.current?.getContext("webgl2");
 
+      let cleanup : (() => void) | undefined = undefined;
+
       if (newContext) {
         setContext(
           newContext
         );
 
-        testWebgl(
+        // Stop managing the viewport whenever this component unmounts.
+        cleanup = viewportManager.syncViewportToSize(
           newContext
         );
+
+        // Timeout is necessary due to the viewport syncing mechanism. Syncing requires a frame to apply properly,
+        // and using setTimeout provides the frame needed.
+        setTimeout(
+          () => {
+            testWebgl(
+              newContext
+            );
+          }
+        );
       }
+
+      return cleanup;
     },
     []
   );
