@@ -32,6 +32,7 @@
         "before": true
       }
     ],
+    "brace-style": "error",
     "linebreak-style": [
       "error",
       "unix"
@@ -42,15 +43,13 @@
       "double"
     ],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": ["warn", {
+    "react-hooks/exhaustive-deps": ["error", {
       "additionalHooks" : "(useAsyncEffect)"
     }],
     "semi": [
       "error",
       "always"
-    ],
-
-    "no-undef": "off"
+    ]
   },
   "settings": {
     "react" : {
