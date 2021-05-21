@@ -1,8 +1,11 @@
 {
     "private": true,
     "workspaces": [
+        "data3",
         "edit3",
         "eng3",
-        "playground"
+        "ren3",
+        "playground",
+        "util3"
     ]
 }

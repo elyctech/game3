@@ -1,6 +1,8 @@
-type ViewportManagementTerminator = () => void;
+import ViewportManager              from "../../lib/viewport_manager/index.type";
+import ViewportManagementTerminator from "../../lib/viewport_management_terminator/index.type";
 
-const viewportManager = {
+// TODO Class/Factory
+const viewportManager : ViewportManager = {
   syncViewportToSize(
     gl2 : WebGL2RenderingContext
   ) : ViewportManagementTerminator {

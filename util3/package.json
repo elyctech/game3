@@ -1,0 +1,21 @@
+{
+  "name": "@game3/util3",
+  "version": "0.1.0",
+  "description": "A set if 3D-processing utilities.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/elyctech/game3",
+  "author": "Cyle Ven Dawson <dawsonc623@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@game3/data3": "^0.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.2.3"
+  }
+}

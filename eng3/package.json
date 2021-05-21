@@ -11,6 +11,8 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
+    "@game3/data3": "^0.1.0",
+    "@game3/ren3": "^0.1.0",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "eslint": "^7.21.0",
